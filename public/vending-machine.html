@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자판기 관리 프로그램</title>
+</head>
+<body>
+  <h1>자판기 관리 프로그램</h1>
+  <p>Java Swing GUI, Socket 통신, 파일 기반 DB, 직접 구현 자료구조를 포함한 JAVA 프로그래밍 과제 프로젝트입니다.</p>
+  <h2>핵심 기능</h2>
+  <ul>
+    <li>8개 음료 판매, 재고 10개 기본값, 품절 표시 및 구매 제한</li>
+    <li>10원/50원/100원/500원/1000원 투입, 환불, 거스름돈 관리</li>
+    <li>관리자 비밀번호, 일별/월별 매출, 재고 보충, 수금, 이름/가격 변경</li>
+    <li>Linked List, Stack, Queue, Tree, Sort, Search 직접 구현</li>
+    <li>3개 이상 스레드와 TCP Socket 서버/클라이언트 동기화</li>
+  </ul>
+  <h2>실행 방법</h2>
+  <pre><code>javac -encoding UTF-8 -d vending-machine/out $(find vending-machine/src -name '*.java')
+java -cp vending-machine/out vending.VendingSyncServer 5555
+# 웹 관리자: http://127.0.0.1:8080
+java -cp vending-machine/out vending.VendingMachineApp</code></pre>
+  <p><a href="../docs/vending-machine-design-report.md">상위/상세 설계 및 최종 완료 보고서</a></p>
+  <p><a href="../vending-machine/README.md">프로젝트 README</a></p>
+  <p><a href="../index.html">돌아가기</a></p>
+</body>
+</html>
