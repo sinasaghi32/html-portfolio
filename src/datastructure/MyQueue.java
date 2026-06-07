@@ -1,0 +1,2 @@
+package datastructure;
+public class MyQueue<T> { private static class Node<T>{T v;Node<T> n;Node(T v){this.v=v;}} private Node<T> h,t; private int size; public synchronized void enqueue(T v){ Node<T> n=new Node<>(v); if(t==null)h=t=n; else{t.n=n;t=n;} size++; notifyAll(); } public synchronized T dequeue(){ if(h==null)return null; T v=h.v; h=h.n; if(h==null)t=null; size--; return v; } public synchronized boolean isEmpty(){return size==0;} public synchronized int size(){return size;} }
